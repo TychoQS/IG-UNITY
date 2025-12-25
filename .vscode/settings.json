@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "IG-UNITY.slnx"
+    "dotnet.defaultSolution": "IG-PRACTICA.slnx"
 }
