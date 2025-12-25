@@ -227,7 +227,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 500}
+  m_LocalScale: {x: 2, y: 1, z: 200}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -526,6 +526,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nagoyacitybus
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aeef059efbc256244b89117d1952e061, type: 3}
+      propertyPath: m_TagString
+      value: Vehicle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -604,6 +608,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: police-van
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d223ecb373ce30f48bd517ba977d3598, type: 3}
+      propertyPath: m_TagString
+      value: Vehicle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -7029948723529949830, guid: d223ecb373ce30f48bd517ba977d3598, type: 3}
@@ -671,9 +679,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: CarModel
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8534a0b5a38341747a3369a54e312a43, type: 3}
+      propertyPath: m_TagString
+      value: Vehicle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8534a0b5a38341747a3369a54e312a43, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1631751500}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8534a0b5a38341747a3369a54e312a43, type: 3}
 --- !u!1 &1076160310 stripped
@@ -744,6 +759,54 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1087871, y: 0.029031094, z: 0.031105962}
   m_Center: {x: 0.0013079904, y: 0.0004972159, z: -0.0017000907}
+--- !u!1 &1178334179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1178334181}
+  - component: {fileID: 1178334180}
+  m_Layer: 0
+  m_Name: TeleportByTagManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1178334180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178334179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feafbb5c6403a187b808b1f7d0a9a4e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TeleportByTag
+  tagToTeleport: Vehicle
+  endPosition: 650
+  startPosition: -900
+  showDebugMessages: 1
+--- !u!4 &1178334181
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178334179}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.03896, y: 3.42271, z: -403.00925}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1293048432 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d223ecb373ce30f48bd517ba977d3598, type: 3}
@@ -841,12 +904,11 @@ Transform:
   m_GameObject: {fileID: 1335181727}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 0, z: -15}
+  m_LocalPosition: {x: 3.014, y: 0, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1882009702}
-  - {fileID: 1631751500}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1335181730
@@ -1141,12 +1203,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631751497}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
-  m_LocalPosition: {x: 0, y: 7, z: -208.4}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: 0.76604456, y: -0, z: -0, w: 0.6427875}
+  m_LocalPosition: {x: 0, y: 0.31499997, z: 0.07000004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1335181729}
+  m_Father: {fileID: 1882009702}
   m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
 --- !u!114 &1631751501
 MonoBehaviour:
@@ -1475,6 +1537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlackCar
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8534a0b5a38341747a3369a54e312a43, type: 3}
+      propertyPath: m_TagString
+      value: Vehicle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1501,3 +1567,4 @@ SceneRoots:
   - {fileID: 483879373}
   - {fileID: 1790293365}
   - {fileID: 932439030}
+  - {fileID: 1178334181}
