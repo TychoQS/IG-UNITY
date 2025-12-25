@@ -1,8 +1,12 @@
 using UnityEngine;
+using TMPro;
 
 [RequireComponent(typeof(Rigidbody))]
 public class CarEngine : MonoBehaviour
 {
+    [Header("UI References")]
+    public TMP_Text speedMeterText;
+
     [Header("Movement")]
     public float forwardSpeed = 70f;
     public float lateralSpeed = 10f;
@@ -16,6 +20,7 @@ public class CarEngine : MonoBehaviour
 
     void Start()
     {
+        speedMeterText.text = "0 Km/h";
         rb = GetComponent<Rigidbody>();
         
         rb.constraints = RigidbodyConstraints.FreezeRotationX | 
@@ -47,5 +52,6 @@ public class CarEngine : MonoBehaviour
         Vector3 lateralMovement = transform.right * horizontalInput * lateralSpeed * Time.fixedDeltaTime;
         
         rb.MovePosition(rb.position + forwardMovement + lateralMovement);
+        speedMeterText.text = currentSpeed.ToString("F1") + " Km/h";
     }
 }
