@@ -343,10 +343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8534a0b5a38341747a3369a54e312a43, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1631751500}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8534a0b5a38341747a3369a54e312a43, type: 3}
       insertIndex: -1
@@ -395,11 +392,12 @@ Transform:
   m_GameObject: {fileID: 1335181727}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.43, y: 0, z: -14.56}
+  m_LocalPosition: {x: 3, y: 0, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1882009702}
+  - {fileID: 1631751500}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1429586812
@@ -615,13 +613,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631751497}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.77117985, y: 0.02450479, z: 0.014099438, w: 0.63598925}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009947187, y: 0.010074027, z: 0.009997995}
+  m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
+  m_LocalPosition: {x: 0, y: 7, z: -30}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1882009702}
-  m_LocalEulerAnglesHint: {x: 10.99, y: 3.09, z: -0.55}
+  m_Father: {fileID: 1335181729}
+  m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
 --- !u!114 &1631751501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -777,6 +775,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2050779652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050779646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3e11e24692a60e47af485f0d6df290b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  speed: 0
+  minSpeed: 10
+  maxSpeed: 20
 --- !u!1001 &2123527793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -843,6 +856,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8534a0b5a38341747a3369a54e312a43, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2050779651}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8534a0b5a38341747a3369a54e312a43, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2050779652}
   m_SourcePrefab: {fileID: 100100000, guid: 8534a0b5a38341747a3369a54e312a43, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
