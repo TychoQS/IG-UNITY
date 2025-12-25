@@ -762,8 +762,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarAI
   speed: 0
-  minSpeed: 50
-  maxSpeed: 100
+  minSpeed: 55
+  maxSpeed: 60
 --- !u!65 &1293048434
 BoxCollider:
   m_ObjectHideFlags: 0
