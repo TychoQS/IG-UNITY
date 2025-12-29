@@ -20,3 +20,6 @@ Este juego es una parodia con fines académicos. Cualquier parecido con el tráf
 ## Autores
 - Juan Carlos Rodríguez Ramírez
 - Tycho Quintana Santana
+
+## Demo
+[![Ver demo](demo_thumb.png)](gc-1_sim.mp4)
