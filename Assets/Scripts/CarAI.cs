@@ -9,6 +9,11 @@ public class CarAI : MonoBehaviour
     void Start()
     {
         speed = Random.Range(minSpeed, maxSpeed);
+
+        if (gameObject.CompareTag("RVehicle"))
+        {
+            speed *= -1;
+        }
     }
     
     void Update()
