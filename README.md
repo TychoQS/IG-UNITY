@@ -22,5 +22,5 @@ Este juego es una parodia con fines académicos. Cualquier parecido con el tráf
 - Tycho Quintana Santana
 
 ## Demo
-
+En caso de no poder reproducir el vídeo, cambia de navegador momentáneamente.
 https://github.com/user-attachments/assets/e4f87368-5726-4606-b7cf-d553acbbe0d9
